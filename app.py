@@ -27,4 +27,4 @@ def reference():
     return render_template('reference.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
