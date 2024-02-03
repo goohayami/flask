@@ -22,5 +22,9 @@ def index():
 def create():
     return render_template('create.html')
 
+@app.route('/reference')
+def reference():
+    return render_template('reference.html')
+
 if __name__ == "__main__":
-    app()
+    app.run()
