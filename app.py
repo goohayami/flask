@@ -41,4 +41,4 @@ def home():
     return render_template('url.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
