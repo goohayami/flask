@@ -31,14 +31,14 @@ def reference():
 # def url():
 #     return render_template('url.html')
 
-@app.route('/url',methods =['POST','GET'])
-def home():
-  if request.method=="POST":
-    url_received = request.form["url"]
-    short_url = pyshorteners.Shortener().tinyurl.short(url_received)
-    return render_template('url.html',new_url=short_url, old_url=url_received)
-  else:
-    return render_template('url.html')
+# @app.route('/url',methods =['POST','GET'])
+# def home():
+#   if request.method=="POST":
+#     url_received = request.form["url"]
+#     short_url = pyshorteners.Shortener().tinyurl.short(url_received)
+#     return render_template('url.html',new_url=short_url, old_url=url_received)
+#   else:
+#     return render_template('url.html')
 
 if __name__ == "__main__":
     app.run()
